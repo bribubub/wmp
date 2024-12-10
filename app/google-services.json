@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1015915410411",
+    "project_id": "mydb-5a535",
+    "storage_bucket": "mydb-5a535.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1015915410411:android:b75be1da67ae8ec4b15fae",
+        "android_client_info": {
+          "package_name": "com.example.umpweek9"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA19wBLEZ6Ua_s2HBMVKzb5YRC1S3GY6ww"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,9 +1,9 @@
 package com.example.umpweek9;
 
 public class Destination {
-    private String name;
-    private String description;
-    private int imageResId; // Resource ID for the image
+    private final String name;
+    private final String description;
+    private final int imageResId;
 
     public Destination(String name, String description, int imageResId) {
         this.name = name;
@@ -11,7 +11,6 @@ public class Destination {
         this.imageResId = imageResId;
     }
 
-    // Getters
     public String getName() {
         return name;
     }

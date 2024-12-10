@@ -54,7 +54,11 @@ public class ThirdFragment extends Fragment {
     }
 
     private void exit() {
-        getActivity().finish(); // Exit the application
+        // Finish the current activity
+        getActivity().finish();
+
+        // Kill the app process
+        System.exit(0); // Or use android.os.Process.killProcess(android.os.Process.myPid());
     }
 
     private void changePassword() {

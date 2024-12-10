@@ -16,6 +16,7 @@
     import android.widget.EditText;
 
 
+
     import java.util.ArrayList;
     import java.util.List;
 
@@ -35,7 +36,6 @@
             Toast.makeText(getContext(), "Fragment 2 loaded", Toast.LENGTH_SHORT).show();
 
             // Initialize RecyclerView
-
             recyclerView = view.findViewById(R.id.recycler_view_destinations);
             recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
 
@@ -44,8 +44,8 @@
             destinationList = new ArrayList<>();
             loadDestinations();
 
-            // Set Adapter
-            adapter = new DestinationAdapter(destinationList);
+            // Set Adapter (pass context here)
+            adapter = new DestinationAdapter(getContext(), destinationList);
             recyclerView.setAdapter(adapter);
 
             // Add TextWatcher to handle search

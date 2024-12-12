@@ -1,35 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/background_color">
 
-    <!-- Vertical LinearLayout for the content -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:padding="16dp">
 
+        <!-- Title -->
+        <TextView
+            android:id="@+id/tvSecondFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Explore Destinations"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp" />
+
         <!-- Search Bar -->
         <EditText
             android:id="@+id/search_bar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Search for destinations..."
-            android:padding="12dp"
-            android:textSize="16sp"
-            android:background="@android:color/white"
             android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_edittext"
             android:drawableStart="@drawable/ic_search_foreground"
             android:drawablePadding="8dp"
-        />
+            android:hint="Search destinations..."
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/hint_text_color"
+            android:textSize="16sp" />
 
-        <!-- RecyclerView for displaying the destinations -->
+        <!-- RecyclerView for destinations -->
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recycler_view_destinations"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"/>
+            android:background="@drawable/recycler_view_background"
+            android:padding="8dp" />
 
     </LinearLayout>
 

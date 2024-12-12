@@ -14,6 +14,14 @@
     <color name="primary_blue">#007AFF</color>
     <color name="gray">#CCCCCC</color>
     <color name="backgroundColor">#F5F5F5</color>
+    <color name="logout_button_color">#FF5722</color> <!-- Orange for Logout Button -->
+    <color name="exit_button_color">#F44336</color> <!-- Red for Exit Button -->
+    <color name="hint_text_color">#A1A1A1</color> <!-- Light gray hint -->
+    <color name="edittext_background">#2A2A2A</color> <!-- Dark gray for EditText -->
+    <color name="recycler_background">#333333</color> <!-- Slightly lighter gray -->
+    <color name="background_color">#1C1C1C</color> <!-- Dark background -->
+    <color name="button_primary">#4CAF50</color>
+    <color name="button_secondary">#009688</color>
 
 
 </resources>
